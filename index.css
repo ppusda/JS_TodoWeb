@@ -1,0 +1,130 @@
+html {
+  font-size: 16px;
+}
+
+body{
+    background-color: #4e4e4e;
+    color: rgba(255, 255, 255, 0.8);   
+    animation: fadeIn 0.8s linear;
+  }
+  
+  h1{
+    font-size: 6.5rem;
+    transition: color 0.5s ease-in-out;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  input {  
+    border-left: medium none;
+    border-right: medium none;
+    border-top: medium none;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.8);;
+  }
+  input:focus { 
+    outline: none;
+  }
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  form, .js_clock{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  li {
+    list-style: none;
+    padding: 0.2rem;
+  }
+
+  h4{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 0.8s linear;
+  }
+
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  .js-weather {
+    position: absolute;
+    top: 2%;
+    left: 91%;
+  }
+
+  .js-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .js-toDoForm{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }  
+
+  .js_list{
+    width: 26rem;
+    height: 20rem;
+    overflow:auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 56%;
+    left: 38.5%;
+    margin-top: 1%;
+  }
+  .js_list::-webkit-scrollbar {
+    height: 1rem;
+    width: 1rem;
+  }
+  .js_list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  .js_list::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+
+  .bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.8s linear;
+    filter: brightness(80%);
+  }
+
+  .form,
+  .greetings {
+    display: none;
+  }
+
+  .showing {
+    display: block;
+  }
