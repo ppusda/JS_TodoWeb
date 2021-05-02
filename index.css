@@ -94,8 +94,9 @@ body{
     overflow:auto;
     overflow-x: hidden;
     position: absolute;
-    top: 56%;
-    left: 38.5%;
+    top: 73%;
+    left: 49%;
+    transform: translate(-50%, -50%);
     margin-top: 1%;
   }
   .js_list::-webkit-scrollbar {
