@@ -1,35 +1,11 @@
-const title = document.querySelector("#title");
+// const footer = document.querySelector("js_footer"),
+//     btnGit = footer.querySelector("btnGit"),
+//     btnNvb = footer.querySelector("btnNvb"); 
 
-const CLICKED_CLASS = "clicked";
-
-function handleclick() {
-    // const hasClass = title.classList.contains(CLICKED_CLASS);
-    
-    // if(hasClass) {
-    //     title.classList.remove(CLICKED_CLASS);
-    // }else{
-    //     title.classList.add(CLICKED_CLASS);
-    // }
-
-    title.classList.toggle(CLICKED_CLASS);
+function moveGit(event) {
+    location.href = "https://github.com/ppusda/";
 }
 
-function init(){
-    title.addEventListener("click", handleclick);
+function moveNvb(event) {
+    location.href = "https://blog.naver.com/PostList.nhn?blogId=ppusda"; 
 }
-init();
-
-// function handleOffline() {
-//     console.log("bye");
-// }
-
-// function handleOnline() {
-//     console.log("welcome back~~")
-// }
-
-// window.addEventListener('offline', handleOffline);
-// window.addEventListener('online', handleOnline);
-
-// title.innerHTML = "Hi! HTML! this is js!";
-// document.title = "JS POWER!";
-// console.log(title);
